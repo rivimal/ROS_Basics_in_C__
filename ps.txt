@@ -1,0 +1,11 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+user         1  0.0  0.0   3980  2920 ?        Ss   21:24   0:00 /bin/bash -c sudo ln -sfv /opt/ros/noetic /opt/ros/latest; sleep infinity
+user         9  0.0  0.0   2512   476 ?        S    21:24   0:00 sleep infinity
+user       189  0.0  0.0   5820  4840 pts/1    Ss+  21:24   0:00 /bin/bash -c source /home/user/.bashrc;  export ROS_PACKAGE_PATH=/home/user/quiz_ws:$ROS_PACKAGE_PATH;  export ROS_HOSTNAME=4_quiz_correction;  export ROS_MASTER_URI=http://4_simulation:11311;  export DOCKER_HOST_IP_ADDRESS=172.31.42.246;  export SLOT_PREFIX=dd7796b0-952d-4353-8180-ad87b63f8632;  roslaunch tests_quizes services_quiz.launch --screen gui:=false  
+user       261  0.6  0.1 255156 29264 pts/1    Sl+  21:24   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch tests_quizes services_quiz.launch --screen gui:=false
+user       269  0.1  0.0   5992  5224 ?        Ss   21:24   0:00 bash /home/user/quiz_ws/Quizes/tests_quizes/scripts/services_quiz.sh __name:=services_quiz_node __log:=/home/user/.ros/log/e122d4ea-9fa1-11ef-82d1-0242c0a80006/services_quiz_node-1.log
+user       817  1.0  0.1 254896 29352 ?        Sl   21:24   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch services_quiz start_bb8_move_custom_service_server.launch
+user       826  7.8  0.1 349160 19424 ?        Ssl  21:24   0:03 /home/user/catkin_ws/devel/lib/services_quiz/bb8_move_custom_service_server __name:=service_server __log:=/home/user/.ros/log/e122d4ea-9fa1-11ef-82d1-0242c0a80006/service_server-1.log
+user       831  1.4  0.1 254892 29296 ?        Sl   21:25   0:00 /usr/bin/python3 /opt/ros/noetic/bin/roslaunch services_quiz call_bb8_move_in_square_custom_service_server.launch
+user       840  6.8  0.1 283504 19320 ?        Ssl  21:25   0:01 /home/user/catkin_ws/devel/lib/services_quiz/bb8_move_custom_service_client __name:=service_client_bb8 __log:=/home/user/.ros/log/e122d4ea-9fa1-11ef-82d1-0242c0a80006/service_client_bb8-1.log
+user       845  0.0  0.0   5904  2940 ?        R    21:25   0:00 ps aux

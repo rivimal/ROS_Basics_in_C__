@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="service_client_bb8_pkg" type="call_bb8_move_custom_service_server" name="service_client_bb8" output="screen" />
+</launch>
